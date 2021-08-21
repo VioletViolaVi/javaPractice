@@ -17,7 +17,12 @@ public class Main {
         PrintName printName = new PrintName();
         printName.myName("Jessie J");
 
+        // ternary operator usage
+        int time = 2;
+        String greeting = time < 18 ? "Good day.": "Good evening.";
+        System.out.println(greeting);
+        System.out.println((time < 18) ? "Good day.": "Good evening.");
 
-
+        //
     }
 }
