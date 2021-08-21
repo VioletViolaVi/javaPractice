@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,6 +43,7 @@ public class Main {
         System.out.println("\n");
 
         /* https://www.w3resource.com/java-exercises/basic/index.php */
+        /* Start */
 
         // 1) printing your full name
         System.out.println("Challenge 1:");
@@ -88,5 +88,29 @@ public class Main {
         int thirdNum = math.add(5, secondNum);
         int fourthNum = math.subtract(thirdNum, otherFirstNum);
         System.out.println(fourthNum);
+
+        /* End */
+
+        System.out.println("\n");
+
+        // Maps
+        LinkedHashMap weatherMap = new LinkedHashMap(); /* using LinkedHashMap allows keys or values be printed out in order in terminal */
+        weatherMap.put("sunny", "hot");
+        weatherMap.put("winter", "cold");
+        weatherMap.put("clear skies", "warm");
+        System.out.println(weatherMap);
+        System.out.println(weatherMap.get("clear skies"));
+        System.out.println(weatherMap.size());
+        for (Object weatherType : weatherMap.keySet()) {
+            System.out.println(weatherType);
+        }
+        System.out.println("\n");
+        for (Object temp : weatherMap.values()) {
+            System.out.println(temp);
+        }
+        System.out.println("\n");
+        for (Object all : weatherMap.entrySet()) {
+            System.out.println(all);
+        }
     }
 }
