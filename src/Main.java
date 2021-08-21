@@ -1,7 +1,20 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        // ArrayLists
+        ArrayList<String> foods = new ArrayList<>();
+        foods.add("pie");
+        foods.add("chips");
+        foods.add("soup");
+        foods.add("sweets");
+        foods.add("bread");
+        foods.add("fish");
+        System.out.println(foods);
+        foods.set(0, "sandwich");
+        System.out.println(foods);
+        System.out.println(foods.get(3));
 
         // ternary operator usage
         int time = 2;
@@ -62,6 +75,5 @@ public class Main {
         int thirdNum = math.add(5, secondNum);
         int fourthNum = math.subtract(thirdNum, otherFirstNum);
         System.out.println(fourthNum);
-
     }
 }
