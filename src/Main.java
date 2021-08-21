@@ -39,7 +39,29 @@ public class Main {
 
         // 4a) -5 + 8 * 6
         System.out.println("Challenge 4a:");
-        System.out.println(math.multiply(math.add(-5, 8) , 6));
+        System.out.println(math.add(-5 , math.multiply(8, 6)));
+
+        // 4b) (55+9) % 9
+        System.out.println("Challenge 4b:");
+        int firstPart = math.add(55, 9);
+        int secondPart = math.modulo(firstPart, 9);
+        System.out.println(secondPart);
+
+        // 4c) 20 + -3*5 / 8
+        System.out.println("Challenge 4c:");
+        int first = math.multiply(-3, 5);
+        int second = math.divide(first, 8) ;
+        int third = math.add(20, second);
+        System.out.println(third);
+
+        // 4d) 5 + ((15 / 3) * 2) - (8 % 3)
+        System.out.println("Challenge 4d:");
+        int firstNum = math.divide(15, 3);
+        int secondNum = math.multiply(firstNum, 2);
+        int otherFirstNum = math.modulo(8, 3);
+        int thirdNum = math.add(5, secondNum);
+        int fourthNum = math.subtract(thirdNum, otherFirstNum);
+        System.out.println(fourthNum);
 
     }
 }
