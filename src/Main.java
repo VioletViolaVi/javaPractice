@@ -6,6 +6,9 @@ public class Main {
         StaticPractice.weatherSentence("sunny");
         System.out.println(StaticPractice.faveTvShow);
         System.out.println(StaticPractice.lightSwitch("oFf"));
+        System.out.println(StaticPractice.worstTvShow);
+        StaticPractice.ageRestriction(23);
+        StaticPractice.ageRestriction(6);
 
         System.out.println("\n");
 
