@@ -3,6 +3,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        // static practice
+        StaticPractice.weatherSentence("sunny");
+        System.out.println(StaticPractice.faveTvShow);
+        System.out.println(StaticPractice.lightSwitch("oFf"));
+
+        System.out.println("\n");
+
         // ArrayLists
         ArrayList<String> foods = new ArrayList<>();
         foods.add("pie");
@@ -16,11 +23,15 @@ public class Main {
         System.out.println(foods);
         System.out.println(foods.get(3));
 
+        System.out.println("\n");
+
         // ternary operator usage
         int time = 2;
         String greeting = time < 18 ? "Good day.": "Good evening.";
         System.out.println(greeting);
         System.out.println((time < 18) ? "Good day.": "Good evening.");
+
+        System.out.println("\n");
 
         // finding specific number in array
         FindTheNum findTheNum = new FindTheNum();
@@ -29,6 +40,8 @@ public class Main {
         System.out.println(Arrays.toString(findTheNum.arrayOfNums));
         System.out.println(Arrays.binarySearch(findTheNum.arrayOfNums, findTheNum.numThatIsPassed));
         System.out.println(Arrays.binarySearch(findTheNum.arrayOfNums, findTheNum.numThatIsPassed) > -1);
+
+        System.out.println("\n");
 
         /* https://www.w3resource.com/java-exercises/basic/index.php */
 
