@@ -136,6 +136,12 @@ public class Main {
         for (String city : capitalCities.values()) {
             System.out.println(city);
         }
+        System.out.println("\n");
+        System.out.println(capitalCities.get("Britain"));
+        System.out.println(capitalCities.containsValue("Paris"));
+        System.out.println(capitalCities.containsKey("Singapore"));
+        capitalCities.replace("China", "Shenzhen");
+        System.out.println(capitalCities);
 
 
     }
