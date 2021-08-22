@@ -137,9 +137,8 @@ public class Main {
         capitalCities.clear(); // took all keys and values out
         System.out.println(capitalCities);
 
-        // ArrayLists
         ArrayList<String> foods = new ArrayList<>();
-        foods.add("pie");
+        foods.add("pie");// ArrayLists
         foods.add("chips");
         foods.add("soup");
         foods.add("sweets");
@@ -161,5 +160,49 @@ public class Main {
         System.out.println(testScores);
         Collections.sort(testScores);
         System.out.println(testScores);
+
+        System.out.println("\n");
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.remove(1);
+        System.out.println("HERE LOOK HERE!!!");
+        numbers.set(0, 67859);
+        System.out.println(numbers);
+
+        System.out.println("\n");
+
+        ArrayList<Double> decimalNums = new ArrayList<>();
+        decimalNums.add(15.0);
+        decimalNums.add(6.7);
+        decimalNums.add(9.341);
+        System.out.println(decimalNums);
+
+        System.out.println("\n");
+
+        // Binary Search
+        System.out.println("HERE LOOK HERE!!!");
+        int[] nums = {20, 30, 40};
+        System.out.println("Arrays.binarySearch(nums, 30): " + Arrays.binarySearch(nums, 30));
+
+        System.out.println("\n");
+
+        String[] randWords = {"hello", "cat", "dog", "house", "mouse", "goodbye", "see ya"};
+        Arrays.sort(randWords);
+        System.out.println("Now Sorted: " + Arrays.toString(randWords));
+        System.out.println("Arrays.binarySearch(randWords, \"hello\"): " + Arrays.binarySearch(randWords, "hello"));
+        System.out.println("Arrays.binarySearch(randWords, \"see ya\"): " + Arrays.binarySearch(randWords, "see ya"));
+
+        System.out.println("\n");
+        double[] randDecimals = {2.2, 3.4, 13.567, 0.454, 5.67, 6.2, 8.1, 0.2548};
+        Arrays.sort(randDecimals);
+        System.out.println("Now Sorted: " + Arrays.toString(randDecimals));
+        System.out.println("Arrays.binarySearch(randWords, \"13.567\"): " + Arrays.binarySearch(randDecimals, 13.567));
+
+
     }
 }
