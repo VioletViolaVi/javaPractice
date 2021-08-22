@@ -96,7 +96,7 @@ public class Main {
 
         System.out.println("\n");
 
-        // Maps
+        // LinkedHashMap
         LinkedHashMap weatherMap = new LinkedHashMap(); /* using LinkedHashMap allows keys or values be printed out in order in terminal */
         weatherMap.put("sunny", "hot");
         weatherMap.put("winter", "cold");
@@ -104,6 +104,7 @@ public class Main {
         System.out.println(weatherMap);
         System.out.println(weatherMap.get("clear skies"));
         System.out.println(weatherMap.size());
+        System.out.println("\n");
         for (Object weatherType : weatherMap.keySet()) {
             System.out.println(weatherType);
         }
@@ -115,5 +116,27 @@ public class Main {
         for (Object all : weatherMap.entrySet()) {
             System.out.println(all);
         }
+        System.out.println("\n");
+
+        // HashMap
+        HashMap<String, String> capitalCities = new HashMap<>();
+        capitalCities.put("Britain", "London");
+        capitalCities.put("South Korea", "Seoul");
+        capitalCities.put("Japan", "Tokyo");
+        capitalCities.put("China", "Shanghai");
+        System.out.println(capitalCities);
+        for (Map.Entry bothCountryAndCapital : capitalCities.entrySet()) {
+            System.out.println(bothCountryAndCapital);
+        }
+        System.out.println("\n");
+        for (String country : capitalCities.keySet()) {
+            System.out.println(country);
+        }
+        System.out.println("\n");
+        for (String city : capitalCities.values()) {
+            System.out.println(city);
+        }
+
+
     }
 }
