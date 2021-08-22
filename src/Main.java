@@ -12,21 +12,6 @@ public class Main {
 
         System.out.println("\n");
 
-        // ArrayLists
-        ArrayList<String> foods = new ArrayList<>();
-        foods.add("pie");
-        foods.add("chips");
-        foods.add("soup");
-        foods.add("sweets");
-        foods.add("bread");
-        foods.add("fish");
-        System.out.println(foods);
-        foods.set(0, "sandwich");
-        System.out.println(foods);
-        System.out.println(foods.get(3));
-
-        System.out.println("\n");
-
         // ternary operator usage
         int time = 2;
         String greeting = time < 18 ? "Good day.": "Good evening.";
@@ -125,12 +110,19 @@ public class Main {
         capitalCities.put("Japan", "Tokyo");
         capitalCities.put("China", "Shanghai");
         System.out.println(capitalCities);
+        System.out.println("\n");
+        System.out.println("LOOK HERE ALSO!!!");
         for (Map.Entry bothCountryAndCapital : capitalCities.entrySet()) {
             System.out.println(bothCountryAndCapital);
         }
         System.out.println("\n");
+        for (Map.Entry bothCountryAndCapital : capitalCities.entrySet()) {
+            System.out.println("bothCountryAndCapital.getKey(): " + bothCountryAndCapital.getKey() + "\nbothCountryAndCapital.getValue(): " + bothCountryAndCapital.getValue());
+        }
+        System.out.println("\n");
+        System.out.println("LOOK HERE!!!");
         for (String country : capitalCities.keySet()) {
-            System.out.println(country);
+            System.out.println("Country: " + country + "\nCapital: " + capitalCities.get(country));
         }
         System.out.println("\n");
         for (String city : capitalCities.values()) {
@@ -142,7 +134,32 @@ public class Main {
         System.out.println(capitalCities.containsKey("Singapore"));
         capitalCities.replace("China", "Shenzhen");
         System.out.println(capitalCities);
+        capitalCities.clear(); // took all keys and values out
+        System.out.println(capitalCities);
 
+        // ArrayLists
+        ArrayList<String> foods = new ArrayList<>();
+        foods.add("pie");
+        foods.add("chips");
+        foods.add("soup");
+        foods.add("sweets");
+        foods.add("bread");
+        foods.add("fish");
+        System.out.println(foods);
+        foods.set(0, "sandwich");
+        System.out.println(foods);
+        System.out.println(foods.get(3));
 
+        System.out.println("\n");
+
+        ArrayList<Integer> testScores = new ArrayList<>();
+        testScores.add(30);
+        testScores.add(60);
+        testScores.add(100);
+        System.out.println(testScores);
+        testScores.add(0);
+        System.out.println(testScores);
+        Collections.sort(testScores);
+        System.out.println(testScores);
     }
 }
