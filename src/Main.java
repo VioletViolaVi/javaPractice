@@ -186,7 +186,7 @@ public class Main {
 
         // Binary Search
         System.out.println("HERE LOOK HERE!!!");
-        int[] nums = {20, 30, 40};
+        int[] nums = {20, 30, 35, 40};
         System.out.println("Arrays.binarySearch(nums, 30): " + Arrays.binarySearch(nums, 30));
 
         System.out.println("\n");
